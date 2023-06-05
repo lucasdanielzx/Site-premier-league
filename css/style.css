@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*deixar conteudo fixo no centro da pagina:*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cabecalho .container {
+    /*obter flexibilidade nos elementos filhos:*/
+    display: flex; /*elementos um ao lado do outro*/
+    align-items: center; /*centralizar o elemento, removendo distorção da imagem*/
+    /* justify-content: space-between; elementos em lados opostos */
+}
+
+/*container2 -> exclusivo para o menu principal*/
+.container2 {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    background: #37003c;
+}
+
+#cabecalho .container2 {
+    display: flex; 
+    align-items: center;
+}
+
+/*Menu dos times:*/
+#menu-times .img-link-externo {
+    width: 12px;
+    margin-left: 2px;
+}
+
+#menu-times .img-logos-clubes {
+    width: 32px;
+    height: 32px;
+}
+
+#cabecalho #menu-times ul {
+    display: flex;
+}
+
+#cabecalho #menu-times li {
+    list-style: none; /* remover ponto da lista */
+}
+
+#cabecalho #menu-times h5 {
+    display: block;
+    padding: 12px;
+    margin-top: 9px;
+    font-weight: 700;
+    color: #76766f;
+    font-size: 10px;
+    white-space: nowrap; /*impedir quebra de linha*/
+}
+
+#cabecalho #menu-times a {
+    display: block;
+    padding: 12px;
+}
+
+#cabecalho #menu-times a:hover {
+    scale: 1.2;
+    transition: 0.1s;
+}
+
+/*MENU PRINCIPAL:*/
+.img-logo-premier {
+    width: 70px;
+}
+
+#cabecalho #menu ul {
+    display: flex;
+}
+
+#cabecalho #menu li {
+    list-style: none; /* remover ponto da lista */
+}
+
+#cabecalho #menu a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#cabecalho #menu a:hover {
+    scale: 1.1;
+    transition: 0.1s;
+}
+
+#cabecalho .box-logo {
+    background-color: #FFFFFF;
+    border-radius: 0px 45px 45px 0px;
+}
+
+/* RODAPE: */
+#rodape .patrocinios {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center; /*alinhamento horizontal e vertical*/
+
+    /*fixar no centro da tela:*/
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /*ajustes nos espaços:*/
+    margin-bottom: -21px;
+
+    /*borda superior:*/
+    border-top: 5px solid #37003c;
+}
+
+#rodape .creditos {
+    background: #37003c;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 15px;
+}
+
+#rodape .creditos .texto-rodape a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#rodape .creditos .texto-rodape a:hover {
+    text-decoration: underline;
+}
