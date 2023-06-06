@@ -100,6 +100,19 @@
     border-radius: 0px 45px 45px 0px;
 }
 
+#conteudo #banners {
+    margin-top: 15px;
+}
+
+#conteudo #conteudo-inicial {
+    margin-bottom: 15px;
+}
+
+#conteudo #conteudo-inicial p {
+    font-weight: 400;
+    text-align: justify;
+}
+
 /* RODAPE: */
 #rodape .patrocinios {
     display: grid; 
