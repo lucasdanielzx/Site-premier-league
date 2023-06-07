@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth; /*scroll suave*/
 }
 
 /*deixar conteudo fixo no centro da pagina:*/
@@ -15,28 +16,30 @@
     /*obter flexibilidade nos elementos filhos:*/
     display: flex; /*elementos um ao lado do outro*/
     align-items: center; /*centralizar o elemento, removendo distorção da imagem*/
-    /* justify-content: space-between; elementos em lados opostos */
 }
 
 /*container2 -> exclusivo para o menu principal*/
-.container2 {
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    background: #37003c;
-}
-
 #cabecalho .container2 {
+    background: #37003c;
     display: flex; 
     align-items: center;
 }
 
+/*class ativada com js para fixar o menu principal:*/
+#cabecalho .cabecalho-rolagem {
+    position: fixed; /*fixar menu na tela*/
+    width: 100%;
+    top: 0;
+    z-index: 999; /*sobreposição nos itens*/
+}
+
 /*Menu dos times:*/
-#menu-times .img-link-externo {
+#menu-times .img-link-externo { /*ajustes na imagem ao lado do texto*/
     width: 12px;
     margin-left: 2px;
 }
 
-#menu-times .img-logos-clubes {
+#menu-times .img-logos-clubes { /*padrão de tamanho*/
     width: 32px;
     height: 32px;
 }
@@ -49,7 +52,7 @@
     list-style: none; /* remover ponto da lista */
 }
 
-#cabecalho #menu-times h5 {
+#cabecalho #menu-times h5 { /*formatação do texto 'clubes sites'*/
     display: block;
     padding: 12px;
     margin-top: 9px;
@@ -64,13 +67,13 @@
     padding: 12px;
 }
 
-#cabecalho #menu-times a:hover {
+#cabecalho #menu-times a:hover { /*ação ao passar o mouse por cima do emblema dos clubes*/
     scale: 1.2;
     transition: 0.1s;
 }
 
 /*MENU PRINCIPAL:*/
-.img-logo-premier {
+#cabecalho .box-logo .img-logo-premier { /*definir tamanho da imagem do menu principal*/
     width: 70px;
 }
 
@@ -82,7 +85,7 @@
     list-style: none; /* remover ponto da lista */
 }
 
-#cabecalho #menu a {
+#cabecalho #menu a { /*formatação do texto do menu principal*/
     display: block;
     padding: 20px;
     text-decoration: none;
@@ -90,21 +93,26 @@
     font-weight: 700;
 }
 
-#cabecalho #menu a:hover {
+#cabecalho #menu a:hover { /*ação ao passar o mouse em cima das opções do menu principal*/
     scale: 1.1;
     transition: 0.1s;
 }
 
-#cabecalho .box-logo {
+#cabecalho .box-logo { /*fundo para comportar a logo da premier no menu principal*/
     background-color: #FFFFFF;
     border-radius: 0px 45px 45px 0px;
 }
 
-#conteudo #banners {
+#cabecalho .box-logo:hover { /*ação ao passar o mouse em cima da logo do menu principal*/
+    scale: 1.2;
+    transition: 0.2s;
+}
+
+#conteudo #banners { /*espaço entre o menu e o slider*/
     margin-top: 15px;
 }
 
-#conteudo #conteudo-inicial {
+#conteudo #conteudo-inicial { /*conteudo do index*/
     margin-bottom: 15px;
 }
 
@@ -115,7 +123,7 @@
 
 /* RODAPE: */
 #rodape .patrocinios {
-    display: grid; 
+    display: grid; /*grade dos patrocinios*/
     grid-template-columns: repeat(5, 1fr);
     place-items: center; /*alinhamento horizontal e vertical*/
 
@@ -130,20 +138,49 @@
     border-top: 5px solid #37003c;
 }
 
-#rodape .creditos {
+#rodape .creditos { /*definição das propriedades dos créditos do rodapé*/
     background: #37003c;
     text-align: center;
     color: #FFFFFF;
     font-weight: 200;
-    font-size: 12px;
+    font-size: 13px;
     padding: 15px;
+
+    position: relative; /*para posicionar a seta de voltar ao topo*/
 }
 
-#rodape .creditos .texto-rodape a {
+#rodape .creditos a { /*deixar links com aparência igual ao texto*/
     color: #FFFFFF;
     text-decoration: none;
 }
 
-#rodape .creditos .texto-rodape a:hover {
+#rodape .creditos .texto-rodape a:hover { /*ação ao passar o mouse sobre os links*/
     text-decoration: underline;
+}
+
+#rodape .creditos .btn-voltar-topo { /*definição das propriedades do 'botão'*/
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*posicionar o 'botão' em relação a div dos creditos (canto da página)*/
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+#rodape .creditos .btn-voltar-topo span{ /*corrigir posição da seta dentro da div*/
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+#rodape .creditos .btn-voltar-topo:hover { /*ação ao passar o mouse sobre o 'botão'*/
+    scale: 1.2;
+    transition: 0.1s;
+    background-color: #FFFFFF;
+    color: #37003c;
 }
