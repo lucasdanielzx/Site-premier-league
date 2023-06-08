@@ -328,7 +328,40 @@
 }
 
 /*-------------------------------- CONTEUDO DA PÁGINA 'ESTATISTICAS' --------------------------------*/
-/* #conteudo #conteudo-estatisticas */
+#conteudo #conteudo-estatisticas h1 {
+    color: #37003c;
+    font-size: 30px;
+    margin-bottom: 10px; /*separar titulo das li*/
+    text-align: center;
+}
+
+#conteudo #conteudo-estatisticas li {
+    margin-left: 25px; /*alinhar li's com o container*/
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+#conteudo #conteudo-estatisticas .maiores-vencedores-premier {
+    margin-bottom: 20px; /*espaçamento entre uma box e outra*/
+}
+
+#conteudo #conteudo-estatisticas .maiores-vencedores-ingles {
+    margin-bottom: 20px; /*espaçamento entre uma box e outra*/
+}
+
+#conteudo #conteudo-estatisticas .artilharia {
+    margin-bottom: 20px; /*espaçamento entre uma box e outra*/
+}
+
+#conteudo #conteudo-estatisticas .artilharia p, #conteudo #conteudo-estatisticas .assistentes p {
+    font-style: italic; /*formatar legenda das tabelas*/
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#conteudo #conteudo-estatisticas .assistentes {
+    margin-bottom: 20px; /*espaçamento entre uma box e outra*/
+}
 
 
 /* ---------------------------------------- RODAPE ---------------------------------------------------*/
