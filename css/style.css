@@ -114,7 +114,7 @@
 
 /*conteudo do index*/
 #conteudo #conteudo-inicial { 
-    margin-bottom: 15px;
+    margin-bottom: 15px; /*espaçamento entre o conteudo e o rodape*/
 }
 
 /*box de direcionar para o site da premier:*/
@@ -141,24 +141,23 @@
 
 #conteudo #conteudo-inicial .direcionar-site .box-desc { /*largura da primeira div da grid*/
     width: 400px;
-    /* border: 2px solid #37003c; */
     height: 100%;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;
 }
 
 #conteudo #conteudo-inicial .direcionar-site .box-desc h1 { /*propriedades do titulo da grid*/
     color: #37003c;
-    font-size: 20px;
-    margin-left: 8px;
+    font-size: 21px;
+    margin-left: 11px;
 }
-#conteudo #conteudo-inicial .direcionar-site .box-desc p {
-    margin-left: 9px;
+#conteudo #conteudo-inicial .direcionar-site .box-desc p { /*ajuste no texto*/
+    margin-left: 12px;
 }
 
-#conteudo #conteudo-inicial .direcionar-site .box-siteoficial {
+#conteudo #conteudo-inicial .direcionar-site .box-siteoficial { /*propriedades dos links*/
     color: #FFFFFF;
     font-weight: 600;
 }
@@ -181,31 +180,31 @@
 }
 
 /*box de curiosidades:*/
-#conteudo #conteudo-inicial .curiosidades { /*deixar texto e imagem lado a lado*/
-    display: flex;
+#conteudo #conteudo-inicial .curiosidades { 
+    display: flex; /*deixar texto e imagem lado a lado*/
+    margin-top: 6px;
 }
 
 #conteudo #conteudo-inicial .curiosidades .img-taca { /*propriedades da imagem da taça*/
     width: 300px;
     margin-top: 15px;
     border: 2px solid #37003c;
-    /* float: left; */
 }
 
 #conteudo #conteudo-inicial .curiosidades .texto-curiosidades {
-    margin-top: 10px;
-    margin-left: 30px;
+    margin-top: 13px;
+    margin-left: 30px; /*distanciar texto da imagem*/
 }
 
 #conteudo #conteudo-inicial .curiosidades .texto-curiosidades h1 {
-    margin-left: 315px;
+    margin-left: 315px; /*centralizar titulo*/
     color: #37003c;
     font-size: 35px;
     margin-bottom: 10px;
 }
 
 #conteudo #conteudo-inicial .curiosidades .texto-curiosidades ul li {
-    margin-bottom: 5px; /*espaçamento entre curiosidades*/
+    margin-bottom: 5px; /*espaçamento entre as curiosidades (li)*/
     text-align: justify;
 }
 
