@@ -119,21 +119,20 @@
 
 /*box de direcionar para o site da premier:*/
 #conteudo #conteudo-inicial .direcionar-site {
+    display: flex;
+    align-items: center;
     height: 70px; 
-
+    border: 2px solid #37003c;
     margin-top: 15px;
-
-    display: grid; /*grade dos links*/
-    grid-template-columns: repeat(5, 1fr);
-    place-items: center;
-}
+} 
 
 #conteudo #conteudo-inicial .direcionar-site a { /*remover sublinhado dos links*/
     text-decoration: none;
+    color: #37003c;
 }
 
 #conteudo #conteudo-inicial .direcionar-site a:hover { /*diminuir box ao passar mouse em cima*/
-    scale: 0.95;
+    scale: 1.1;
 }
 
 #conteudo #conteudo-inicial .direcionar-site p a:hover { /*add sublinhado ao texto ao passar mouse sobre*/
@@ -142,29 +141,43 @@
 
 #conteudo #conteudo-inicial .direcionar-site .box-desc { /*largura da primeira div da grid*/
     width: 400px;
-    border: 2px solid #37003c;
+    /* border: 2px solid #37003c; */
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #conteudo #conteudo-inicial .direcionar-site .box-desc h1 { /*propriedades do titulo da grid*/
     color: #37003c;
-    font-size: 29px;
+    font-size: 20px;
     margin-left: 8px;
 }
 #conteudo #conteudo-inicial .direcionar-site .box-desc p {
-    margin-left: 8px;
+    margin-left: 9px;
 }
 
 #conteudo #conteudo-inicial .direcionar-site .box-siteoficial {
-    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+#conteudo #conteudo-inicial .direcionar-site .box-links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     background-color: #37003c;
 }
 
-#conteudo #conteudo-inicial .direcionar-site .box-siteoficial p {
-    height: 70px; 
-    width: 200px;
-    color: #FFFFFF;
-    font-weight: 600;
-    text-align: center;
+#conteudo #conteudo-inicial .direcionar-site .box-links .borda {
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*box de curiosidades:*/
