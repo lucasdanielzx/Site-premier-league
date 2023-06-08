@@ -112,12 +112,87 @@
     margin-top: 15px;
 }
 
-#conteudo #conteudo-inicial { /*conteudo do index*/
+/*conteudo do index*/
+#conteudo #conteudo-inicial { 
     margin-bottom: 15px;
 }
 
-#conteudo #conteudo-inicial p {
-    font-weight: 400;
+/*box de direcionar para o site da premier:*/
+#conteudo #conteudo-inicial .direcionar-site {
+    height: 70px; 
+
+    margin-top: 15px;
+
+    display: grid; /*grade dos links*/
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+
+#conteudo #conteudo-inicial .direcionar-site a { /*remover sublinhado dos links*/
+    text-decoration: none;
+}
+
+#conteudo #conteudo-inicial .direcionar-site a:hover { /*diminuir box ao passar mouse em cima*/
+    scale: 0.95;
+}
+
+#conteudo #conteudo-inicial .direcionar-site p a:hover { /*add sublinhado ao texto ao passar mouse sobre*/
+    text-decoration: underline;
+}
+
+#conteudo #conteudo-inicial .direcionar-site .box-desc { /*largura da primeira div da grid*/
+    width: 400px;
+    border: 2px solid #37003c;
+}
+
+#conteudo #conteudo-inicial .direcionar-site .box-desc h1 { /*propriedades do titulo da grid*/
+    color: #37003c;
+    font-size: 29px;
+    margin-left: 8px;
+}
+#conteudo #conteudo-inicial .direcionar-site .box-desc p {
+    margin-left: 8px;
+}
+
+#conteudo #conteudo-inicial .direcionar-site .box-siteoficial {
+    border: 1px solid #FFFFFF;
+    background-color: #37003c;
+}
+
+#conteudo #conteudo-inicial .direcionar-site .box-siteoficial p {
+    height: 70px; 
+    width: 200px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*box de curiosidades:*/
+#conteudo #conteudo-inicial .curiosidades { /*deixar texto e imagem lado a lado*/
+    display: flex;
+}
+
+#conteudo #conteudo-inicial .curiosidades .img-taca { /*propriedades da imagem da taça*/
+    width: 300px;
+    margin-top: 15px;
+    border: 2px solid #37003c;
+    /* float: left; */
+}
+
+#conteudo #conteudo-inicial .curiosidades .texto-curiosidades {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#conteudo #conteudo-inicial .curiosidades .texto-curiosidades h1 {
+    margin-left: 315px;
+    color: #37003c;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#conteudo #conteudo-inicial .curiosidades .texto-curiosidades ul li {
+    margin-bottom: 5px; /*espaçamento entre curiosidades*/
     text-align: justify;
 }
 
@@ -184,3 +259,4 @@
     background-color: #FFFFFF;
     color: #37003c;
 }
+
