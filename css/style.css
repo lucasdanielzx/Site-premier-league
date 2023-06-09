@@ -363,6 +363,53 @@
     margin-bottom: 20px; /*espaçamento entre uma box e outra*/
 }
 
+/*-------------------------------- CONTEUDO DA PÁGINA 'HISTÓRIA' --------------------------------*/
+#conteudo #conteudo-historia h1 {
+    color: #37003c;
+    font-size: 35px;
+    margin-bottom: 10px; /*espaço entre titulo e texto*/
+    text-align: center;
+}
+
+#conteudo #conteudo-historia  h2 {
+    color: #37003c;
+    margin-top: 20px; /*separar o subtitulo do texto do outro subtitulo*/
+    margin-bottom: 5px; /*separar subtitulo do seu texto*/
+}
+
+#conteudo #conteudo-historia  p {
+    text-align: justify;
+    margin-bottom: 7px; /*espaço entre paragrafos*/
+}
+
+#conteudo #conteudo-historia .img-tragedia {
+    float: right; /*img a direita do texto*/
+    width: 380px;
+    height: 270px;
+    border: 2px solid #37003c;
+    margin-left: 15px; /*espaço entre texto e imagem*/
+}
+
+#conteudo #conteudo-historia .img-city {
+    float: right; /*img a direita do texto*/
+    height: 225px;
+    width: 380px;
+    border: 2px solid #37003c;
+    margin-left: 15px; /*espaço entre texto e imagem*/
+}
+
+#conteudo #conteudo-historia .creditos {
+    font-style: italic;
+    margin-top: 25px;
+}
+
+#conteudo #conteudo-historia .creditos a { /*deixar link com aparencia de texto normal*/
+    text-decoration: none;
+    color: black;
+}
+#conteudo #conteudo-historia .creditos a:hover { /*ação ao passar mouse sobre a palavra*/
+    text-decoration: underline;
+}
 
 /* ---------------------------------------- RODAPE ---------------------------------------------------*/
 #rodape .patrocinios {
