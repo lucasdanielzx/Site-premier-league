@@ -243,7 +243,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 
-    margin-bottom: 20px; /*separar galeria do titulo de videos*/
+    margin-bottom: 25px; /*separar galeria do titulo de videos*/
 }
 
 #conteudo #conteudo-fotos-videos .box-fotos img {
@@ -275,7 +275,7 @@
     display: flex; 
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 #conteudo #conteudo-fotos-videos .box-redes-sociais h3 {
@@ -297,7 +297,7 @@
     font-size: 35px;
     color: #37003c;
 
-    margin-bottom: 25px; /*espaço entre o titulo e os emblemas*/
+    margin-bottom: 30px; /*espaço entre o titulo e os emblemas*/
 }
 
 /*BOX DOS CAMPEÕES DA PREMIER LEAGUE:*/
@@ -368,7 +368,7 @@
 #conteudo #conteudo-historia h1 {
     color: #37003c;
     font-size: 35px;
-    margin-bottom: 10px; /*espaço entre titulo e texto*/
+    margin-bottom: 30px; /*espaço entre titulo e texto*/
     text-align: center;
 }
 
@@ -417,7 +417,7 @@
     color: #37003c;
     text-align: center;
     font-size: 35px;
-    margin-bottom: 20px; /*espaço entre o titulo e os textos/imagens*/
+    margin-bottom: 30px; /*espaço entre o titulo e os textos/imagens*/
 }
 
 #conteudo #conteudo-melhores-jogadores .jogador h2 {
