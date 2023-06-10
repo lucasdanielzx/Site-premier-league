@@ -12,6 +12,12 @@
     margin: 0 auto;
 }
 
+/*espaçamento entre o menu, conteudo e rodape*/
+#conteudo {
+    margin-bottom: 25px; 
+    margin-top: 20px;
+}
+
 /*PROPRIEDADES DAS TABELAS:*/
 .tabela {
     width: 100%;
@@ -127,14 +133,9 @@
 }
 
 /*--------------------------------------- CONTEUDO DO INDEX --------------------------------------------*/
-#conteudo {
-    margin-bottom: 25px; /*espaçamento entre o conteudo e o rodape*/
-    margin-top: 20px;
+#conteudo #conteudo-inicial p {
+    text-align: justify;
 }
-
-/* #conteudo #banners { /*espaço entre o menu e o slider
-     margin-top: 15px; 
-} */
 
 /*box de direcionar para o site da premier:*/
 #conteudo #conteudo-inicial .direcionar-site {
@@ -408,6 +409,56 @@
     color: black;
 }
 #conteudo #conteudo-historia .creditos a:hover { /*ação ao passar mouse sobre a palavra*/
+    text-decoration: underline;
+}
+
+/*----------------------------- CONTEUDO DA PÁGINA 'MELHORES JOGADORES' ------------------------------*/
+#conteudo #conteudo-melhores-jogadores h1 {
+    color: #37003c;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px; /*espaço entre o titulo e os textos/imagens*/
+}
+
+#conteudo #conteudo-melhores-jogadores .jogador h2 {
+    color: #37003c;
+    margin-bottom: 10px; /*espaço entre subtitulos e imagens*/
+}
+
+#conteudo #conteudo-melhores-jogadores .jogador .galeria-jogador {
+    margin-bottom: 7px; /*espaço entre a foto do jogador e o texto*/
+}
+
+#conteudo #conteudo-melhores-jogadores .jogador p {
+    text-align: justify;
+    margin-bottom: 7px; /*espaço entre paragrafos*/
+}
+
+#conteudo #conteudo-melhores-jogadores .jogador {
+    margin-bottom: 20px; /*espaço entre um jogdor e outro*/
+}
+
+#conteudo #conteudo-melhores-jogadores .jogador .galeria-jogador {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#conteudo #conteudo-melhores-jogadores .jogador .galeria-jogador img, #conteudo #conteudo-melhores-jogadores .jogador .galeria-jogador iframe {
+    border: 2px solid #37003c;
+    width: 100%;
+}
+
+#conteudo #conteudo-melhores-jogadores .creditos {
+    font-style: italic;
+    margin-top: 25px;
+}
+
+#conteudo #conteudo-melhores-jogadores .creditos a { /*deixar link com aparencia de texto normal*/
+    text-decoration: none;
+    color: black;
+}
+#conteudo #conteudo-melhores-jogadores .creditos a:hover { /*ação ao passar mouse sobre a palavra*/
     text-decoration: underline;
 }
 
